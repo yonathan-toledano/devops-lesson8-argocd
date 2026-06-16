@@ -60,7 +60,7 @@ spec:
   selector:
     app: my-website
   ports:
-    - protocol: TCP
+    - name: http
       port: 80
       targetPort: 80
-      nodePort: 30084
+      nodePort: 30080
