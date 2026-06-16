@@ -1,4 +1,9 @@
 apiVersion: v1
+kind: Namespace
+metadata:
+  name: student-apps
+---
+apiVersion: v1
 kind: ConfigMap
 metadata:
   name: my-website-config
@@ -55,6 +60,7 @@ spec:
   selector:
     app: my-website
   ports:
-    - port: 80
+    - protocol: TCP
+      port: 80
       targetPort: 80
       nodePort: 30084
