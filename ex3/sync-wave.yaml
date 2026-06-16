@@ -115,7 +115,7 @@ spec:
     spec:
       containers:
         - name: main
-          image: nginx:1.27-alpine
+          image: ginx:1.27-alpine
           ports:
             - containerPort: 80
 ---
